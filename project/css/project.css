@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.wrap{
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg{
+    position: relative;
+    overflow: hidden;
+}
+
+.content ul{
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.content ul li:nth-child(2):hover{
+    transform: translateZ(180deg);
+}
+
+.gnb{
+    position: absolute;
+    left: 90.77px;
+    top: 381.28px;
+}
