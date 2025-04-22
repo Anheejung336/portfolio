@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="체험활동 예약 사이트">
+    <meta name="keywords" content="원데이클래스,취미활동,만들기 키트, 모임형성">
+    <meta name="author" content="an heejung">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFTBOX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <script src="https://kit.fontawesome.com/e9623bd7b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="bar">
+        <div class="inner">
+            <h1><a href="#"><img src="img/logo.png" alt="LOGO"></a></h1>
+            <nav>
+                <div class="nav_bg">
+                </div>
+                <ul class="gnb">
+                    <li><a href="#">CLASS</a>
+                        <ul class="sub">
+                            <li><a href="#">카테고리</a></li>
+                            <li><a href="#">인원</a></li>
+                            <li><a href="#">일정</a></li>
+                            <li><a href="#">모임</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="#">COMMUNITY</a>
+                        <ul class="sub">
+                            <li><a href="#">가입하기</a></li>
+                            <li><a href="#">생성하기</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="#">EVENT</a>
+                        <ul class="sub">
+                            <li><a href="#">이벤트 참여</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="#">HELP</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="#">LOGIN</a>
+                        <ul class="sub">
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">My페이지</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                </ul><!-- //.gnb -->
+            </nav>
+        </div><!-- //.inner -->
+    </header>
+    <div class="main_visual">
+        <div class="inner">
+            <div class="txt">
+                <h3>지루한 일상 속, 특별한 하루</h3>
+                <h2 class="gradient-text">GIFT BOX.</h2>
+                <p>매일 반복되는 일상을 벗어나 새로운 하루를 선물받으세요.<br>다양한 체험활동을 추천하고, 취미를 찾아가는 선물상자 기프트박스</p>
+                <div class="icon">
+                    <ul>
+                        <li>
+                            <img src="img/icon1.png" alt="맞춤형 추천">맞춤형 추천
+                        </li>
+                        <li>
+                            <img src="img/icon2.png" alt="다양한 모임">다양한 모임
+                        </li>
+                        <li>
+                            <img src="img/icon3.png" alt="공유하기">공유하기
+                        </li>
+                    </ul>
+                </div><!-- //.icon -->
+            </div><!-- //.txt -->
+            <div class="box">
+                <img src="img/box.png" alt="floating-img" class="floating-img">
+            </div><!-- //.box -->
+        </div><!-- //.inner -->
+    </div><!-- //.main_visual -->
+    <div class="banner">
+        <div class="inner">
+            <div class="container">
+                <a href="#"><img src="img/circle_icon.png" alt="예약바로가기">
+                    <h1>특별한 하루를<br>
+                        경험하고 체험해보세요.</h1>
+                    <div class="go">
+                        <img src="img/go1.png" alt="예약바로가기">
+                        <img src="img/go1.png" alt="예약바로가기">
+                        <img src="img/go1.png" alt="예약바로가기">
+                    </div><!-- //.go -->
+                </a>
+            </div><!-- //.container -->
+        </div><!-- //.inner -->
+    </div><!-- //.banner -->
+    <div class="search">
+        <div class="inner">
+            <div class="stit">
+                    <h1 class="animated-text">
+                        <span>어</span>
+                        <span>떤</span>
+                        <span>활</span>
+                        <span>동</span>
+                        <span>을 </span>
+                        <span>찾</span>
+                        <span>으</span>
+                        <span>세</span>
+                        <span>요</span>
+                        <span>?</span>
+                    </h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="#친구 #취미 #원데이 클래스">
+                    <img src="img/search_icon.png" alt="검색하기">
+                </div><!-- //.search_bar -->
+                <div class="txt">
+                    <a href="#">
+                        <strong>#</strong>카테고리
+                    </a>
+                    <a href="#">
+                        <strong>#</strong>인원
+                    </a>
+                    <a href="#">
+                        <strong>#</strong>일정
+                    </a>
+                    <a href="#">
+                        <strong>#</strong>참여방법
+                    </a>
+                    <a href="#">
+                        <strong>#</strong>모임
+                    </a>
+                </div><!-- //.txt -->
+            </div><!-- stit -->
+        </div><!-- //.inner -->
+    </div><!-- //.search -->
+    <div class="calss">
+        <div class="inner">
+            <div class="tit">
+                <h3>오늘의<br>
+                    인기<br>
+                    <strong>Class</strong>
+                </h3>
+                <p>GIFTBOX가 추천하는<br>
+                    인기 활동을 예약해보세요</p>
+            </div><!-- //.tit -->
+            <div class="cl_slide_wrap swiper">
+                <ul class="cl_slide swiper-wrapper">
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                            <li><a href="#">
+                                    <div class="top">
+                                        <p>97%만족</p>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div><!-- //.top -->
+                                    <div class="bg">
+                                        <div class="bottom">
+                                            <p>[종로3가]</p>
+                                            <h3>도자기 핸드빌딩,<br>
+                                                물레체험 원데이 클래스</h3>
+                                        </div><!-- //.bg -->
+                                    </div><!-- //.bottom -->
+                                </a>
+                            </li><!-- //.swiper-slide -->
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                </ul><!-- //.cl_slide swiper-wrapper -->
+                <div class="swiper-pagination"></div>
+            </div><!-- //.cl_slide_wrap swiper -->
+        </div><!-- //.inner -->
+    </div><!-- //.calss -->
+    <div class="kit">
+        <div class="inner">
+            <div class="kit_slide_wrap swiper">
+                <ul class="kit_slide swiper-wrapper">
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt_2 -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="img_box">
+                                        <div class="top">
+                                            <p>신규</p>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div><!-- //.top -->
+                                    </div><!-- //.img_box -->
+                                    <div class="bottom">
+                                        <h4>나만의 키링만들기<br>
+                                            DIY 키트</h4>
+                                        <p>38,000원</p>
+                                        <div class="txt_2">
+                                            <p>18,000원</p><b>53%</b>
+                                        </div><!-- //.txt -->
+                                    </div><!-- //.bottom -->
+                                </a></li>
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                </ul><!-- //.kit_slide swiper-wrapper -->
+                <div class="swiper-pagination"></div>
+            </div><!-- kit_slide_wrap swiper -->
+            <div class="tit">
+                <div class="txt">
+                    <h3>오늘의<br>
+                        <strong>BEST</strong> 키트
+                    </h3>
+                    <p>집에서 쉽게 즐길 수 있는<br>
+                        제품을 추천받으세요</p>
+                </div><!-- //.txt -->
+                <div class="num">
+                    <ul>
+                        <li><a href="#">
+                                <strong>1</strong>
+                                <p>양모펠트 만들기 키트</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <strong>2</strong>
+                                <p>목도리 뜨개질 키트</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <strong>3</strong>
+                                <p>아이싱쿠키 DIY 세트</p>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></li>
+                    </ul>
+                </div><!-- //.num -->
+            </div><!-- //.tit -->
+        </div><!-- //.inner -->
+    </div><!-- //.kit -->
+    <div class="new">
+        <div class="inner">
+            <div class="tit">
+                <h2>NEW</h2>
+                <p>더보기<img src="img/more.png" alt="더 보기"></p>
+            </div><!-- //.tit -->
+        </div><!-- //.inner -->
+        <div class="slider">
+            <div class="slider-track">
+                <ul>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="img_box">
+                                <div class="top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div><!-- //.top -->
+                            </div><!-- //.img_box -->
+                            <div class="bottom">
+                                <h4>바라클라바 후드 대바늘 뜨개질</h4>
+                                <p>30,000원</p>
+                                <div class="txt_3">
+                                    <p>25,000원</p><b>17%</b>
+                                </div><!-- //.txt_3 -->
+                            </div><!-- //.bottom -->
+                            <div class="btn">예약하기</div>
+                        </a></li>
+                </ul>
+            </div><!-- //.slider-track -->
+        </div><!-- //.slider -->
+    </div><!-- //.new -->
+    <div class="review">
+        <div class="inner">
+            <div class="tit">
+                <h3>경험을<strong>공유</strong>하고 나누다</h3>
+                <p>다른 경험자의 후기를 보고 자신에게 맞는 클래스를 선정해보세요</p>
+            </div><!-- //.tit -->
+            <div class="re_slide_wrap swiper">
+                <ul class="re_slide swiper-wrapper">
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                    <li class="swiper-slide">
+                        <ul>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/rivew00.png" alt="임시">
+                                </a></li>
+                        </ul>
+                    </li><!-- //.swiper-slide -->
+                </ul><!-- //.re_slide swiper-wrapper -->
+                <div class="swiper-pagination"></div>
+            </div><!-- //.re_slide_wrap swiper -->
+        </div><!-- //.inner -->
+    </div><!--//.review -->
+    <div class="together">
+
+    </div><!-- //.together -->
+    <div class="location">
+
+    </div><!-- //.location -->
+    <div class="meeting">
+
+    </div><!-- //.meeting -->
+    <div class="event">
+        <div class="slider">
+            <div class="slider-track">
+                <img src="img/loop.png" alt="">
+            </div><!-- //.slider-track -->
+        </div><!-- //.e_slider -->
+    </div><!-- //.event -->
+    <footer>
+        <img src="img/footer.png" alt="푸터">
+    </footer>
+</body>
+
+</html>
