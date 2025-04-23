@@ -414,6 +414,7 @@ section.txt_area h2 .tit {
     font-size: 3.4vw;
     text-transform: uppercase;
     font-weight: 900;
+    color: #E30613;
 }
 
 .s_tit p {
@@ -508,7 +509,7 @@ section.txt_area h2 .tit {
     text-align: center;
     left: 0;
     top: 0;
-    background: #E30613;
+    background: var(--white-color);
     color: var(--white-color);
     cursor: default;
     backface-visibility: hidden;
@@ -518,19 +519,19 @@ section.txt_area h2 .tit {
 }
 
 .sticky_con ul li:nth-child(1) .front {
-    background-image: url(../img/sticky1.png);
+    background-image: url(../img/sticky1.jpg);
 }
 
 .sticky_con ul li:nth-child(2) .front {
-    background-image: url(../img/sticky2.png);
+    background-image: url(../img/sticky2.jpg);
 }
 
 .sticky_con ul li:nth-child(3) .front {
-    background-image: url(../img/sticky3.png);
+    background-image: url(../img/sticky3.jpg);
 }
 
 .sticky_con ul li>.back {
-    color: var(--white-color);
+    color: #000 ;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -545,22 +546,20 @@ section.txt_area h2 .tit {
     background-size: cover;
     border-radius: 26px;
     margin-bottom: 20px;
-    box-shadow: 0 5px 20px rgba(28, 3, 37, 0.25);
     transition: all 0.3s ease;
 }
 
 .sticky_con ul li:hover .icon {
-    box-shadow: 0 11px 30px rgba(28, 3, 37, 0.3);
     transform: translateY(-5px);
 }
 
 .sticky_con ul li:nth-child(1) .icon {
-    background-image: url(../img/3.png);
+    background-image: url(../img/icon1.jpg);
     background-color: rgba(156, 163, 15, 0.831);
 }
 
 .sticky_con ul li:nth-child(2) .icon {
-    background-image: url(../img/icon2.png);
+    background-image: url(../img/icon2.jpg);
     background-color: rgba(15, 163, 153, 0.485);
 }
 
@@ -572,6 +571,7 @@ section.txt_area h2 .tit {
 .sticky_con ul li h3 {
     font-size: 2.8rem;
     font-weight: 600;
+    color: #E30613;
 }
 
 .sticky_con ul li p {
@@ -762,7 +762,7 @@ section.txt_area h2 .tit {
     width: 100%;
     height: auto;
     background: var(--white-color);
-    color: var(--main-color);
+    color: #E30613;
     position: relative;
     padding-bottom: 40vh;
 }
@@ -779,7 +779,7 @@ section.txt_area h2 .tit {
     margin-top: 10vh;
 }
 
-.vid_box img {
+.vid_box iframe {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -883,7 +883,7 @@ section.txt_area h2 .tit {
 }
 
 .news .more:hover {
-    background: var(--main-color);
+    background: #E30613;
     color: var(--white-color);
     border-color: transparent;
 }
@@ -895,7 +895,7 @@ section.txt_area h2 .tit {
 
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: var(--main-color);
+    background: #E30613;
 }
 
 .news .con {
@@ -922,7 +922,7 @@ section.txt_area h2 .tit {
 .news .con ul li .img_box {
     width: 100%;
     height: 230px;
-    background: var(--main-color);
+    background: #E30613;
     overflow: hidden;
     transition: .6s;
     position: relative;
@@ -956,10 +956,7 @@ section.txt_area h2 .tit {
 footer {
     width: 100%;
     height: 60vh;
-    background: radial-gradient(circle at top right,
-            var(--main-color) 0%,
-            var(--main-color-deep) 30%
-        );
+    background: #000;
     color: var(--white-color);
     display: flex;
     flex-direction: column;
@@ -970,8 +967,8 @@ footer {
 }
 footer h3{
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: var(--sub-color2);
+    margin-bottom:40px;
+    color: #E30613;
 }
 footer p{
     font-size: 4rem;
